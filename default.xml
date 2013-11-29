@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <manifest>
-
       <remote  name="aosp"
-               fetch=".." />
+               fetch="git://android.googlesource.com/" />
+
+      <remote  name="cd"
+               fetch="git://github.com/" />
+
       <default revision="refs/tags/android-2.3.7_r1"
                remote="aosp"
                sync-j="4" />
@@ -26,7 +29,7 @@
       <project path="device/sample" name="device/sample" />
       <project path="device/samsung/crespo" name="device/samsung/crespo" />
       <project path="device/samsung/crespo4g" name="device/samsung/crespo4g" />
-      <project path="external/apache-http" name="platform/external/apache-http" />
+      <!-- <project path="external/apache-http" name="platform/external/apache-http" /> -->
       <project path="external/astl" name="platform/external/astl" />
       <project path="external/bison" name="platform/external/bison" />
       <project path="external/blktrace" name="platform/external/blktrace" />
@@ -109,7 +112,7 @@
       <project path="external/xmlwriter" name="platform/external/xmlwriter" />
       <project path="external/yaffs2" name="platform/external/yaffs2" />
       <project path="external/zlib" name="platform/external/zlib" />
-      <project path="frameworks/base" name="platform/frameworks/base" />
+      <!-- <project path="frameworks/base" name="platform/frameworks/base" /> -->
       <project path="frameworks/ex" name="platform/frameworks/ex" />
       <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
       <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
@@ -121,7 +124,7 @@
       <project path="hardware/ril" name="platform/hardware/ril" />
       <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
       <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" />
-      <project path="libcore" name="platform/libcore" />
+      <!-- <project path="libcore" name="platform/libcore" /> -->
       <project path="ndk" name="platform/ndk" />
       <project path="packages/apps/AccountsAndSyncSettings" name="platform/packages/apps/AccountsAndSyncSettings" />
       <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" />
@@ -173,11 +176,20 @@
       <project path="prebuilt" name="platform/prebuilt" />
       <project path="sdk" name="platform/sdk" />
       <project path="system/bluetooth" name="platform/system/bluetooth" />
-      <project path="system/core" name="platform/system/core" />
+      <!-- <project path="system/core" name="platform/system/core" /> -->
       <project path="system/extras" name="platform/system/extras" />
       <project path="system/media" name="platform/system/media" />
       <project path="system/netd" name="platform/system/netd" />
       <project path="system/vold" name="platform/system/vold" />
       <project path="system/wlan/ti" name="platform/system/wlan/ti" />
 
+      <!-- CobraDroid Added -->
+      <project path="external/apache-http" name="CobraDroid/android_external_apache-http" remote="cd" revision="GB" />
+      <project path="frameworks/base" name="CobraDroid/android_frameworks_base" remote="cd" revision="GB" />
+      <project path="packages/apps/EmuCoreTools" name="CobraDroid/android_packages_apps_EmuCoreTools" remote="cd" revision="GB" />
+      <project path="libcore" name="CobraDroid/android_libcore" remote="cd" revision="GB" />
+      <project path="system/core" name="CobraDroid/android_system_core" remote="cd" revision="GB" />
+      <project path="vendor/cd" name="CobraDroid/android_vendor_cd" remote="cd" revision="GB" />
+
+      <project path="android" name="CobraDroid/android" remote="cd" revision="GB" />
 </manifest>
