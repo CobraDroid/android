@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <manifest>
       <remote  name="aosp"
-               fetch="git://android.googlesource.com/" />
+               fetch="https://android.googlesource.com/" />
 
       <remote  name="cd"
-               fetch="git://github.com/" />
+               fetch=".." />
 
       <default revision="refs/tags/android-2.3.7_r1"
                remote="aosp"
