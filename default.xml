@@ -186,7 +186,7 @@
       <!-- CobraDroid Added -->
       <project path="external/apache-http" name="CobraDroid/android_external_apache-http" remote="cd" revision="refs/tags/GB-Beta" />
       <project path="external/iptables" name="CobraDroid/android_external_iptables" remote="cd" revision="refs/tags/GB-Beta" />
-      <project path="external/su" name="git-core/su-binary" remote="cd" revision="master" />
+      <project path="external/su" name="CobraDroid/android_external_su" remote="cd" revision="GB" />
       <project path="frameworks/base" name="CobraDroid/android_frameworks_base" remote="cd" revision="refs/tags/GB-Beta" />
       <project path="packages/apps/EmuCoreTools" name="CobraDroid/android_packages_apps_EmuCoreTools" remote="cd" revision="refs/tags/GB-Beta" />
       <project path="packages/apps/Superuser" name="CyanogenMod/android_packages_apps_Superuser" remote="cd" revision="gb-release-7.2" />
