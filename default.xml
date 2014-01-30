@@ -2,7 +2,11 @@
     <manifest>
 
       <remote  name="aosp"
+               fetch="https://android.googlesource.com/" />
+
+      <remote  name="cd"
                fetch=".." />
+
       <default revision="refs/tags/android-4.3.1_r1"
                remote="aosp"
                sync-j="4" />
@@ -212,7 +216,7 @@
       <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
       <project path="external/zxing" name="platform/external/zxing" />
       <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-      <project path="frameworks/base" name="platform/frameworks/base" />
+      <!-- <project path="frameworks/base" name="platform/frameworks/base" /> -->
       <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
       <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
       <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -365,7 +369,7 @@
       <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
       <project path="sdk" name="platform/sdk" />
       <project path="system/bluetooth" name="platform/system/bluetooth" groups="pdk" />
-      <project path="system/core" name="platform/system/core" groups="pdk" />
+      <!-- <project path="system/core" name="platform/system/core" groups="pdk" /> -->
       <project path="system/extras" name="platform/system/extras" groups="pdk" />
       <project path="system/media" name="platform/system/media" groups="pdk" />
       <project path="system/netd" name="platform/system/netd" groups="pdk" />
@@ -382,4 +386,11 @@
       <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
       <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
 
+
+      <!-- CobraDroid Added -->
+      <project path="frameworks/base" name="CobraDroid/android_frameworks_base" remote="cd" revision="JB" />
+      <project path="system/core" name="CobraDroid/android_system_core"  groups="pdk" remote="cd" revision="JB" />
+      <project path="vendor/cd" name="CobraDroid/android_vendor_cd" remote="cd" revision="JB" />
+
+      <project path="android" name="CobraDroid/android" remote="cd" revision="JB" />
 </manifest>
