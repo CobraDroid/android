@@ -388,6 +388,8 @@
 
 
       <!-- CobraDroid Added -->
+      <project path="external/koush/Superuser" name="koush/Superuser" remote="cd" revision="master" />
+      <project path="external/koush/Widgets" name="koush/Widgets" remote="cd" revision="master" />
       <project path="external/tcpdump" name="platform/external/tcpdump" remote="cd" revision="JB" />
       <project path="external/libpcap" name="platform/external/libpcap" remote="cd" revision="JB" />
 
