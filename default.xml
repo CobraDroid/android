@@ -131,7 +131,7 @@
       <project path="external/libnfc-nxp" name="platform/external/libnfc-nxp" groups="nxp_nfc" />
       <project path="external/libnl-headers" name="platform/external/libnl-headers" groups="pdk" />
       <project path="external/libogg" name="platform/external/libogg" />
-      <project path="external/libpcap" name="platform/external/libpcap" />
+      <!--<project path="external/libpcap" name="platform/external/libpcap" />-->
       <project path="external/libphonenumber" name="platform/external/libphonenumber" />
       <project path="external/libpng" name="platform/external/libpng" groups="pdk" />
       <project path="external/libppp" name="platform/external/libppp" />
@@ -198,7 +198,7 @@
       <project path="external/stressapptest" name="platform/external/stressapptest" />
       <project path="external/svox" name="platform/external/svox" />
       <project path="external/tagsoup" name="platform/external/tagsoup" />
-      <project path="external/tcpdump" name="platform/external/tcpdump" />
+      <!--<project path="external/tcpdump" name="platform/external/tcpdump" />-->
       <project path="external/timezonepicker-support" name="platform/external/timezonepicker-support" />
       <project path="external/tinyalsa" name="platform/external/tinyalsa" groups="pdk" />
       <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" />
@@ -388,6 +388,9 @@
 
 
       <!-- CobraDroid Added -->
+      <project path="external/tcpdump" name="platform/external/tcpdump" remote="cd" revision="JB" />
+      <project path="external/libpcap" name="platform/external/libpcap" remote="cd" revision="JB" />
+
       <project path="frameworks/base" name="CobraDroid/android_frameworks_base" remote="cd" revision="JB" />
       <project path="system/core" name="CobraDroid/android_system_core"  groups="pdk" remote="cd" revision="JB" />
       <project path="vendor/cd" name="CobraDroid/android_vendor_cd" remote="cd" revision="JB" />
