@@ -299,7 +299,7 @@
       <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
       <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
       <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-      <project path="packages/apps/Settings" name="platform/packages/apps/Settings" />
+      <!-- <project path="packages/apps/Settings" name="platform/packages/apps/Settings" /> -->
       <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
       <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
       <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -370,7 +370,7 @@
       <project path="sdk" name="platform/sdk" />
       <project path="system/bluetooth" name="platform/system/bluetooth" groups="pdk" />
       <!-- <project path="system/core" name="platform/system/core" groups="pdk" /> -->
-      <project path="system/extras" name="platform/system/extras" groups="pdk" />
+      <!--<project path="system/extras" name="platform/system/extras" groups="pdk" /> -->
       <project path="system/media" name="platform/system/media" groups="pdk" />
       <project path="system/netd" name="platform/system/netd" groups="pdk" />
       <project path="system/security" name="platform/system/security" groups="pdk" />
@@ -388,13 +388,18 @@
 
 
       <!-- CobraDroid Added -->
-      <project path="external/koush/Superuser" name="koush/Superuser" remote="cd" revision="master" />
+      <project path="external/koush/Superuser" name="CobraDroid/android_external_koush_Superuser" remote="cd" revision="JB" />
       <project path="external/koush/Widgets" name="koush/Widgets" remote="cd" revision="master" />
-      <project path="external/tcpdump" name="platform/external/tcpdump" remote="cd" revision="JB" />
-      <project path="external/libpcap" name="platform/external/libpcap" remote="cd" revision="JB" />
+      <project path="external/tcpdump" name="CobraDroid/android_external_tcpdump" remote="cd" revision="JB" />
+      <project path="external/liblime" name="CobraDroid/android_external_liblime" remote="cd" revision="JB" />
+      <project path="external/libpcap" name="CobraDroid/android_external_libpcap" remote="cd" revision="JB" />
+      <project path="external/lime" name="CobraDroid/android_external_lime" remote="cd" revision="JB" />
 
       <project path="frameworks/base" name="CobraDroid/android_frameworks_base" remote="cd" revision="JB" />
+      <project path="packages/apps/Settings" name="CobraDroid/android_packages_apps_Settings" remote="cd" revision="JB"/>
       <project path="system/core" name="CobraDroid/android_system_core"  groups="pdk" remote="cd" revision="JB" />
+      <project path="system/extras" name="CobraDroid/android_system_extras"  groups="pdk" remote="cd" revision="JB" />
+
       <project path="vendor/cd" name="CobraDroid/android_vendor_cd" remote="cd" revision="JB" />
 
       <project path="android" name="CobraDroid/android" remote="cd" revision="JB" />
